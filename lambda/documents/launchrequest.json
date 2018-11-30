@@ -1,0 +1,47 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [{
+            "type": "Container",
+            "width": "100vw",
+            "height": "100vh",
+            "items": [{
+                "type": "Pager",
+                "id": "kitty",
+                "speech": "${payload.singingKittyData.properties.speech}",
+                "width": "100vw",
+                "height": "100vh",
+                "items": [{
+                    "type": "Image",
+                    "source": "https://s3.amazonaws.com/jeremywall-public/alexa-skills/singing-kitty/images/kitty-middle.jpg",
+                    "width": "100vw",
+                    "height": "100vh"
+                },{
+                    "type": "Image",
+                    "source": "https://s3.amazonaws.com/jeremywall-public/alexa-skills/singing-kitty/images/kitty-left.jpg",
+                    "width": "100vw",
+                    "height": "100vh"
+                },{
+                    "type": "Image",
+                    "source": "https://s3.amazonaws.com/jeremywall-public/alexa-skills/singing-kitty/images/kitty-middle.jpg",
+                    "width": "100vw",
+                    "height": "100vh"
+                },{
+                    "type": "Image",
+                    "source": "https://s3.amazonaws.com/jeremywall-public/alexa-skills/singing-kitty/images/kitty-right.jpg",
+                    "width": "100vw",
+                    "height": "100vh"
+                }]
+            }]
+        }]
+    }
+}
