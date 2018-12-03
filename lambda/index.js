@@ -9,7 +9,6 @@ const LaunchRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = 'meow meow meow, meow meow meow, meow meow meow meow meow meow meow meow meow meow meow';
         const respBuilder = handlerInput.responseBuilder;
 
         if (_.has(handlerInput.requestEnvelope, 'context.System.device.supportedInterfaces["Alexa.Presentation.APL"]')) {
